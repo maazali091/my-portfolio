@@ -1,0 +1,123 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    font-size: 20px;
+}
+.logo{
+    font-family: 'Poppins', sans-serif; /* Professional look ke liye */
+    font-size: 32px;
+    transform: scaleY(1.5);
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.logo span{
+    background: linear-gradient(to right, #b827fc, #2c90fc);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.logo img{
+    position: absolute;
+    bottom: 7px;
+    right: -10px;
+    /* margin: auto; */
+    width: 40px;
+    background-size: cover;
+
+    height: 10px;
+    z-index: -1;
+}
+.nav-menu li{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.nav-menu li img{
+    display: flex;
+    margin: auto;
+}
+.nav-connect{
+    padding: 12px 25px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+.nav-connect a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-mob-open{
+    display: none;
+}
+.nav-mob-close{
+    display: none;
+}
+@media(max-width:768px){    
+    .navbar{
+        width: 100%;
+        background: red;
+        z-index: 9999;
+        overflow-x: hidden;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .nav-mob-open{
+        display: block;
+        position: absolute;
+        right: 50px;
+        top: 40px;
+    }
+    .nav-mob-close{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+    }
+    .nav-menu{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        align-items: start;
+        gap: 30px;
+        background: #1f0016;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+    }
+    .nav-menu li{
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+
