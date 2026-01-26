@@ -48,6 +48,9 @@
     transform: scale(1.05);
     margin-left: 10px;
 }
+.services-container .services-format:last-child{
+    /* grid-column: 2; */
+}
 .services-format h3{
     font-size: 50px;
     font-weight: 600;
@@ -62,12 +65,11 @@
 .services-format p{
     color: #d1d1d1;
     font-size: 18px;
-    /* height: 130px; */
     line-height: 1.6;
     max-width: 320px;
 }
 .services-format p.desc{
-    height: 130px;
+    height: 190px;
 }
 
 .services-readmore{
@@ -82,7 +84,21 @@
     transform: scale(1.05);
     transition: 0.4s;
 }
-
+@media(max-width:1024px){
+    .services-format p{
+        line-height: 1.3;
+    }
+    .services-format h2{
+        font-size: 28px;
+    }
+    .services-format{
+        gap: 15px;
+        /* padding: 27px; */
+    }
+    .services-format p.desc{
+        height: 220px;
+    }
+}
 @media (max-width:768px) {
     .services{
         align-items: start;
@@ -98,15 +114,15 @@
         margin-right: -20px;
     }
     .services-format{
-        gap: 20px;
-        padding: 32px;
+        gap: 15px;
+        padding: 27px;
     }
     .services-format h2{
         font-size: 28px;
     }
     .services-format p{
         font-size: 18px;
-        line-height: 32px;
+        line-height: 1.1;
         max-width: 300px;
     }
     .services-readmore img{
@@ -114,6 +130,28 @@
     }
     .services-container{
         grid-template-columns: 1fr 1fr;
+        /* gap: 30px; */
+    }
+}
+@media(max-width:449px){
+    .services{
+        margin: 30px 15px;
         gap: 30px;
+    }
+    .services .services-title h1{
+        font-size: 38px !important;
+    }
+    .services .services-title img{
+        width: 100px;
+    }
+    .services .services-container{
+        grid-template-columns: 1fr;
+    }
+    .services-format{
+        gap: 10px;
+        padding: 20px 15px;
+    }
+    .services-format p.desc{
+        font-size: 17px;
     }
 }

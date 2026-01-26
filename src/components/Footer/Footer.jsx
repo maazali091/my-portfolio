@@ -10,8 +10,8 @@ function Footer() {
         <div className="footer-top">
             <div className="footer-top-left">
                 {/* <img src={footer_logo} alt="" /> */}
-                <h1 className="logo"><b>Maaz<span>.dev</span></b> <img src={underline} /></h1>
-                <p>I am a frontend developer from Charsadda, Pakistan with 4+ years of experience in transforming complex Figma designs into pixel-perfect React code. </p>
+                <h1 className="logo"><b>Faisal<span>.Amz</span></b> <img src={underline} /></h1>
+                <p>I’m Faisal, an Amazon Account Manager with 4+ years of experience in product hunting, sourcing, brand launches, and PPC management across the US and UK marketplaces. I focus on data-driven strategies to improve visibility, optimize ad spend, and drive profitable growth for Amazon brands.</p>
             </div>
             <div className="footer-top-right">
                 <div className="footer-email-input">
@@ -23,7 +23,8 @@ function Footer() {
         </div>
         <hr />
         <div className="footer-bottom">
-            <p className="footer-bottom-left">&copy; 2026 Maaz Jan &bull; All rights reserved.</p>
+            <p className="footer-bottom-left">&copy; 2026 Faisal Hayat &bull; All rights reserved.</p>
+            <p className='credit'>&bull; Developed by <a href="https://maazali091.github.io/my-portfolio/" target='_blank'>Maaz Ali</a></p>
             <div className="footer-bottom-right">
                 <p>Term of services &bull;</p>
                 <p>Privacy Policy &bull;</p>

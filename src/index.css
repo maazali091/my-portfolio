@@ -4,8 +4,16 @@
 }
 body{
   height: 100vh;
+  width: 100%;
   background: #161513;
   color: #fff;
   font-family: 'Outfit';
   scroll-behavior: smooth;
+}
+@media(max-width:768px){
+  #root{
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+  }
 }

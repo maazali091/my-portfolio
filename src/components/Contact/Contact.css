@@ -43,6 +43,17 @@
     font-size: 20px;
     line-height: 35px;
 }
+.contact-left .social{
+    display: flex;
+    gap: 15px;
+    transition: all 0.5s;
+}
+.contact-left .social img{
+    transition: transform 0.5s;
+}
+.contact-left .social img:hover{
+    transform: scale(1.15);
+}
 .contact-details{
     display: flex;
     flex-direction: column;
@@ -108,6 +119,9 @@
         margin: 50px 70px;
         align-items: start;
     }
+    .contact-title{
+        margin: 0 auto;
+    }
     .contact-title h1{
         padding: 0;
         font-size: 50px;
@@ -146,5 +160,43 @@
     .contact-submit{
         font-size: 20px;
         padding: 15px 40px;
+    }
+}
+@media(max-width:449px){
+    .contact{
+        margin: 20px 15px;
+        gap: 50px;
+    }
+    .contact .contact-title h1{
+        font-size: 38px;
+    }
+    .contact .contact-left{
+        gap: 20px;
+    }
+    .contact .contact-left h1{
+        font-size: 45px;
+    }
+    .contact-detail {
+        gap: 10px;
+    }
+    .contact-detail p{
+        font-size: 16px;
+    }
+    .contact-section {
+        gap: 50px;
+    }
+    .contact-section .contact-right{
+        width: 100%;
+    }
+    .contact-right input{
+        width: 270px !important;
+        padding-left: 15px;
+    }
+    .contact-right label{
+        font-size: 18px;
+    }
+    .contact-right textarea{
+        width: 245px !important;
+        padding-left: 15px;
     }
 }

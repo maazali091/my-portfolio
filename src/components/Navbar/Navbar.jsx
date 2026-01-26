@@ -20,7 +20,7 @@ function Navbar() {
   return (
     <div className='navbar'>
         {/* <img src={logo} alt="" /> */}
-        <h1 className="logo"><b>Maaz<span>.dev</span></b> <img src={underline} /></h1>
+        <h1 className="logo"><b>Faisal<span>.Amz</span></b> <img src={underline} /></h1>
         <img src={menu_open} onClick={openMenu} className='nav-mob-open' />
         <ul ref={menuRef} className='nav-menu'>
             <img src={menu_close} onClick={closeMenu} className="nav-mob-close" />
@@ -31,7 +31,7 @@ function Navbar() {
             <li><a href='#contact' onClick={() => setMenu("contact")}>Contact</a>{menu === 'contact' ? <img src={underline} /> : <></> }</li>
         </ul>
         <div className="nav-connect">
-            <a href="#contact">Connect With Me</a> 
+            <a href="#contact">Get Free Audit</a> 
         </div>
     </div>
   )
